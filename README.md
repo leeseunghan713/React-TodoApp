@@ -9,5 +9,5 @@
 ### 회원가입 화면
 ![KakaoTalk_20240609_210041110_02](https://github.com/leeseunghan713/React-TodoApp/assets/127086663/5caba082-a272-4c45-9217-4943e7f40521)
 
-###메인 화면
+### 메인 화면
 ![KakaoTalk_20240609_210041110_12](https://github.com/leeseunghan713/React-TodoApp/assets/127086663/3e57eb21-8c3b-4b4e-851d-87fb8474fe87)
