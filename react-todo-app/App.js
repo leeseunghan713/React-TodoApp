@@ -6,6 +6,7 @@ import Splashscreen from "./screens/Splashscreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import LoginScreen from "./screens/LoginScreen";
 import MainScreen from "./screens/MainScreen";
+import TestScreen from "./screens/TestScreen";
 import db from './firebaseConfig';
 import { useState } from 'react';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -49,6 +50,11 @@ const App = () => {
             <Stack.Screen
               name="MainScreen"
               component={MainScreen}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="TestScreen"
+              component={TestScreen}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>
