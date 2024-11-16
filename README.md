@@ -5,7 +5,7 @@
 이 어플리케이션을 통해 일정 관리가 더 효율적으로 이루어질 수 있고, 사용자가 간편하게 개인 할 일을 관리할 수 있는 솔루션을 제공하는 것을 목표로 합니다.
 ## 기술 스택
 ![My Skills](https://skillicons.dev/icons?i=react,firebase,vscode,git,notion)
-## 아키텍처
+
 ## 주요기능
 - **로그인 기능**: Firebase Authentication을 통해 사용자 계정으로 로그인
 - **날짜별 일정 관리**: 특정 날짜를 선택하면 해당 날짜의 할 일 목록이 표시됨
