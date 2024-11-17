@@ -5,8 +5,11 @@ import { collection, addDoc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import InputField from '../components/InputField';
 import ErrorMessage from '../components/ErrorMessage';
+import { useNavigation } from "@react-navigation/native";
 
 const TestScreen = () => {
+  const navigation = useNavigation();
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -25,8 +28,8 @@ const TestScreen = () => {
         email: email,
         createdAt: new Date(), // 생성 시각
       });
-
       console.log('회원가입 성공:', user);
+      navigation.navigate('TestLoginScreen');
     } catch (error) {
       setErrorMessage('회원가입 중 오류가 발생했습니다.');
       console.error('회원가입 오류:', error);

@@ -1,5 +1,5 @@
 const Stack = createNativeStackNavigator();
-import * as React from "react";
+
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import Splashscreen from "./screens/Splashscreen";
@@ -7,13 +7,13 @@ import SignUpScreen from "./screens/SignUpScreen";
 import LoginScreen from "./screens/LoginScreen";
 import MainScreen from "./screens/MainScreen";
 import TestScreen from "./screens/TestScreen";
-import db from './firebaseConfig';
+import TestLoginSuccessScreen from './screens/TestLoginSuccessScreen'
+import TestLoginScreen from "./screens/TestLoginScreen";
 import { useState } from 'react';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { View, Text, Pressable, TouchableOpacity } from "react-native";
 
 const App = () => {
-  const [hideSplashScreen, setHideSplashScreen] = React.useState(true);
+  const [hideSplashScreen, setHideSplashScreen] = useState(true);
 
   const [fontsLoaded, error] = useFonts({
     "Poppins-Regular": require("./assets/fonts/Poppins-Regular.ttf"),
@@ -52,11 +52,25 @@ const App = () => {
               component={MainScreen}
               options={{ headerShown: false }}
             />
+
+
             <Stack.Screen
               name="TestScreen"
               component={TestScreen}
               options={{ headerShown: false }}
             />
+            <Stack.Screen
+              name="TestLoginScreen"
+              component={TestLoginScreen}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="TestLoginSuccessScreen"
+              component={TestLoginSuccessScreen}
+              options={{ headerShown: false }}
+            />
+
+            
           </Stack.Navigator>
         ) : null}
       </NavigationContainer>

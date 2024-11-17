@@ -13,7 +13,7 @@ const Splashscreen = () => {
       <TouchableOpacity
         style={styles.button}
         // onPress={() => navigation.navigate("LoginScreen")}
-        onPress={() => navigation.navigate("TestScreen")}
+        onPress={() => navigation.navigate("TestLoginScreen")}
       >
         <Text style={styles.buttonText}>시작하기</Text>
       </TouchableOpacity>
