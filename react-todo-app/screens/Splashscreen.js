@@ -12,8 +12,8 @@ const Splashscreen = () => {
       <Text style={styles.loremIpsumDolor}>Todo 할 일들을 기록해보세요</Text>
       <TouchableOpacity
         style={styles.button}
-        // onPress={() => navigation.navigate("LoginScreen")}
-        onPress={() => navigation.navigate("TestLoginScreen")}
+        onPress={() => navigation.navigate("LoginScreen")}
+        // onPress={() => navigation.navigate("TestLoginScreen")}
       >
         <Text style={styles.buttonText}>시작하기</Text>
       </TouchableOpacity>
