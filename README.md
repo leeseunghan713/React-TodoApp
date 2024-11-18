@@ -11,6 +11,9 @@
 - **날짜별 일정 관리**: 특정 날짜를 선택하면 해당 날짜의 할 일 목록이 표시됨
 - **일정 텍스트 추출 및 복사 기능**: 선택한 날짜의 할 일을 텍스트로 변환하여 복사 가능하여 쉽게 공유 가능
 
+## 아키텍처
+<img src="https://github.com/user-attachments/assets/33f2fc16-1994-4f84-a990-fe49eadde7d2" width="650" />
+
 ## 결과물
 ### 시작화면
 <img src="https://github.com/leeseunghan713/React-TodoApp/assets/127086663/bd1e8625-98b0-452e-9806-3e92f5eb96ef" width="300" />
