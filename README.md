@@ -12,7 +12,7 @@
 - **일정 텍스트 추출 및 복사 기능**: 선택한 날짜의 할 일을 텍스트로 변환하여 복사 가능하여 쉽게 공유 가능
 
 ## 아키텍처
-<img src="https://github.com/user-attachments/assets/33f2fc16-1994-4f84-a990-fe49eadde7d2" width="650" />
+<img src="https://github.com/user-attachments/assets/33f2fc16-1994-4f84-a990-fe49eadde7d2" width="600" />
 
 ## 결과물
 ### 시작화면
