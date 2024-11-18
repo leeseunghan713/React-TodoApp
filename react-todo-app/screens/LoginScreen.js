@@ -10,6 +10,7 @@ import { getUser } from '../service/user'
 
 const LoginScreen = () => {
   const navigation = useNavigation();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -21,16 +22,7 @@ const LoginScreen = () => {
 
       const userData = await getUser(user.uid);
       console.log('로그인 성공', userData);
-      navigation.navigate("MainScreen", {name: userData.name})
-      // const userQuery = query(collection(db, 'users'), where('userId', '==', userId), where('password', '==', password));
-      // const querySnapshot = await getDocs(userQuery);
-
-      // if (!querySnapshot.empty) {
-      //   const userData = querySnapshot.docs[0].data();
-      //   navigation.navigate("MainScreen", { Id: userData.Id, userId: userData.userId, name: userData.name, password: userData.password });
-      // } else {
-      //   setErrorMessage("로그인 정보를 확인해 주세요");
-      // }
+      navigation.navigate("MainScreen", {name: userData.name, uid: userData.uid})
     } catch (error) {
       setErrorMessage("로그인 중 오류가 발생했습니다.");
       console.error('로그인 오류', error);

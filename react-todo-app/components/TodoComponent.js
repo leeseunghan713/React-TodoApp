@@ -7,7 +7,7 @@ import AddTaskModal from './AddTaskModal';
 import ExportTasksModal from './ExportTasksModal';
 import { convertTo24Hour } from './utils';
 
-const TodoComponent = ({ userId, selectedYear, selectedMonth, selectedDay }) => {
+const TodoComponent = ({ uid, selectedYear, selectedMonth, selectedDay }) => {
   const [selectedTask, setSelectedTask] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [newTask, setNewTask] = useState('');
@@ -20,7 +20,7 @@ const TodoComponent = ({ userId, selectedYear, selectedMonth, selectedDay }) => 
 
   useEffect(() => {
     const fetchTodos = async () => {
-      const todos = await getTodos(userId);
+      const todos = await getTodos(uid);
       setTasks(todos);
     };
 

@@ -7,7 +7,7 @@ import { Color, FontSize, FontFamily } from "../components/GlobalStyles";
 
 const MainScreen = () => {
   const route = useRoute();
-  const { userId, name } = route.params;
+  const { uid, name } = route.params;
 
   // 날짜 상태 추가
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
@@ -32,7 +32,7 @@ const MainScreen = () => {
       <DayComponent onDateChange={handleDateChange} />
       <Text style={[styles.taskList, styles.taskListFlexBox]}>Task list</Text>
       <TodoComponent
-        userId={userId}
+        uid={uid}
         selectedYear={selectedYear}
         selectedMonth={selectedMonth}
         selectedDay={selectedDay}
